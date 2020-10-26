@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="Uzduotis11.css"> -->
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -19,10 +18,7 @@
         unset($_SESSION['password']);
         unset($_SESSION['logged_in']);
         print('Logged out!');
-    }
-    ?>
-
-    <!-- <h2 class="login">Log In</h2> -->
+    } ?>
     <div>
         <?php
         session_start();
@@ -46,7 +42,6 @@
         }
         ?>
     </div>
-    <!-- <a href=""></a> -->
     <div class="login">
         <form id="login" action="./" method="post">
             <h4><?php echo $msg; ?></h4>
@@ -74,11 +69,6 @@
                         </div>
                     </div>
             </section>
-            <!-- <input type="text" name="username" placeholder="admin" required autofocus></br>
-            <input type="password" name="password" placeholder="admin" required>
-            <br>
-            <button type="submit" name="login">Login</button> -->
-
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
